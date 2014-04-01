@@ -1,5 +1,3 @@
-#! ~*~ coding: utf-8 ~*~
-
 # Usage: from Symbols import getCode(symbol)
 
 symbols = {}

@@ -1,15 +1,12 @@
-#!/usr/bin/env python2.7
-#! ~*~ coding: utf-8 ~*~
+#!/usr/bin/python3
 
-import Screen
+from newScreen import Screen
 from time import sleep
-import RPi.GPIO as GPIO
+from Cleaner import cleaner
 
-scr = Screen.Screen()
-"""
-scr.message("FIRE!")
+
+scr = Screen()
+scr.message('a')
 sleep(2)
 scr.clear()
-"""
-scr.message('a')
-GPIO.cleanup()
+cleaner()

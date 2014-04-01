@@ -1,5 +1,4 @@
-#!/usr/bin/env python2.7  
-#! ~*~ coding: utf-8 ~*~
+#!/usr/bin/python3
 
 # LCD           RPi             Meaning
 # --------------------------------------------------------------
@@ -22,7 +21,6 @@
   
 import RPi.GPIO as GPIO  
 from time import sleep  
-
 class HD:  
   
     def __init__(self, pin_rs=7, pin_e=8, pins_db=[25, 24, 23, 18]):  
@@ -93,5 +91,4 @@ if __name__ == '__main__':
   
     lcd = HD()  
     lcd.message('abcdefG')
-    lcd.clear()
     GPIO.cleanup()

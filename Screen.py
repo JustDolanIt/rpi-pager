@@ -1,23 +1,21 @@
-#! ~*~ coding: utf-8 ~*~
-
 # LCD           RPi             Meaning
 # --------------------------------------------------------------
-# 01  <------>  GPIO-06 <--->   GND
-# 02  <------>  GPIO-02 <--->   Vcc(5V0/3V3) 
-# 03  <------>  GPIO-06 <--->   Brightness (may be controlled)
-# 04  <------>  GPIO-26 <--->   Adress (data)
-# 05  <------>  GPIO-06 <--->   Read/Write -> 0 (Read only)
-# 06  <------>  GPIO-24 <--->   E (Enable)
+# 01  <------>  GPIO-GND<--->   GND
+# 02  <------>  GPIO-5V <--->   Vcc(5V0/3V3) 
+# 03  <------>  GPIO-GND<--->   Brightness (may be controlled)
+# 04  <------>  GPIO-07 <--->   Adress (data)
+# 05  <------>  GPIO-GND<--->   Read/Write -> 0 (Read only)
+# 06  <------>  GPIO-08 <--->   E (Enable)
 # 07
 # 08
 # 09
 # 10
-# 11  <------>  GPIO-22 <--->   DB4 (lowest for 4bit mode)
-# 12  <------>  GPIO-18 <--->   DB5
-# 13  <------>  GPIO-16 <--->   DB6
-# 14  <------>  GPIO-12 <--->   DB7 (highest for 4bit mode)
-# 15    +5V             <--->   LED power
-# 16  <------>  GPIO-06 <--->   LED GND
+# 11  <------>  GPIO-25 <--->   DB4 (lowest for 4bit mode)
+# 12  <------>  GPIO-24 <--->   DB5
+# 13  <------>  GPIO-23 <--->   DB6
+# 14  <------>  GPIO-18 <--->   DB7 (highest for 4bit mode)
+# 15  <------>  GPIO-5V <--->   LED power
+# 16  <------>  GPIO-GND<--->   LED GND
  
 from Symbols import getCode
 import RPi.GPIO as GPIO
