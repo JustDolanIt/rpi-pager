@@ -25,7 +25,7 @@ from time import sleep
 
 import RPi.GPIO as GPIO
 
-class Screen:
+class lcd:
 
     def __init__(self, pin_a0=14, pin_e=15, pins_db=[8,25,24,23]):
         
@@ -85,7 +85,8 @@ class Screen:
     def clear(self):  
 
         self.cmd(0x01)
-        self.cur_line=1
+        self.cur_line=4
+        self.newLine()
 
     def newLine(self):
         
