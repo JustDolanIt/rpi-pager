@@ -14,6 +14,7 @@ class interface:
     GPIO.setup(self.diode, GPIO.OUT)
     self.button = pin_button
     GPIO.setup(self.button, GPIO.IN)
+    
 
   def newMail(self,message):
     GPIO.output(self.diode, True)
