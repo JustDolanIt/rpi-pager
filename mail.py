@@ -5,12 +5,10 @@ from PagerServer import pagerServer
 from Cleaner import cleaner
 from time import sleep
 import RPi.GPIO as GPIO
+import subprocess
 import asyncore
-import os
 
-device = "eth0"
-
-ipWork = os.popen("ifconfig "+device+" | grep 'inet addr' | awk -F: '{print $2}' | awk '{print $1}'").read()[:-1] # Deleting \n at the end of output
+ipWork = subprocess.getoutput("hostname -I")[:-1] # Don't need space at the end
 
 GPIO.setwarnings(False)
 
