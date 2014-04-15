@@ -4,16 +4,18 @@
 
 Components:
 
-  * display.py - basis of project. Got from [here](http://www.rpiblog.com/2012/11/interfacing-16x2-lcd-with-raspberry-pi.html)
   * Cleaner.py - used for fast cleaning of GPIOs while debuging
-  * newScreen.py - working version without commentaries
-  * Screen.py - not working version, but has comentaries that will go in working version
+  * Interfac.py - used for work with peripherial and listing output
+  * newScreen.py - working version
+  * PagerServer.py - SMTP server that invokes interface output in new thread and put mail copy in Post file
   * Splitter.py - function for dividing long text in parts by needed amount of symbols
+  * Symbols.py - holds coding for MELT LCD text display
+  * TestLCD.py - file for LCD checks
+  * mail.py - main file. Gets all work together
 
 **TODO:**
 
-  * Get commentaries in working version
-  * Get rid of evide... not working version
+  * Make queue for many letters
 
 *Dunaev Dmitry*
 
